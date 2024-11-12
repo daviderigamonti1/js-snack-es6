@@ -32,7 +32,13 @@ let arrayBici = [
         peso: 20,
     },
 ]
-
+let biciLeggera = arrayBici[0];
+for(let i = 0; i < arrayBici.length; i++) {
+    if(biciLeggera.peso > arrayBici[i].peso) {
+        biciLeggera = arrayBici[i];
+    }
+}
+console.log(`La bici più leggera è ${biciLeggera.nome} e pesa ${biciLeggera.peso}kg`);
 /*
 
 Snack2
