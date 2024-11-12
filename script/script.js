@@ -100,3 +100,17 @@ Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più p
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 
 */
+
+//Creo un array di numeri
+const array = [10, 20, 30, 40, 50, 60, 70];
+
+//Funzione con la quale prendiamo i valori dell'array comoresi tra gli indici a e b e li inseriamo in un altro array
+function sottoSequenza(array, a, b){
+    if(a < b && a >= 0 && !isNaN(a) && !isNaN(b)){
+        return array.slice(a, b);
+    }
+}
+
+//Inserisco i valori di a e b
+let risultato = sottoSequenza(array, 1, 5);
+console.log(risultato);
